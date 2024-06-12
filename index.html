@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Tour of DOM</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo in, rerum, hic tempora eveniet aspernatur incidunt
+        a doloremque impedit error aut id nulla delectus saepe maiores vitae consequuntur ipsum temporibus.</p>
+
+
+        <div id="section-container">
+    <section>
+        <h3 id="fruit-title">Fruits : </h3>
+        <ul>
+            <li class="mix-color">🍌 Banana</li>
+            <li class="mix-color">🥭 Mango</li>
+            <li class="mix-color">🍎 Apple </li>
+            <li class="single-color">Orange</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h3 id="place-title" >Places : </h3>
+        <ul id="placeUL">
+            <li class="places">New York</li>
+            <li class="places"> Dhaka</li>
+            <li class="places"> Chittagong </li>
+            <li id="london-text">London</li>
+        </ul>
+    </section>
+
+</div>
+    <script>
+
+        // title changed by js  -  getElementById
+        const changedTitle = document.getElementById('fruit-title')
+        changedTitle.innerText = 'Fruit title changed by JS'
+
+
+        // get innerText of all li - getElementsByClassName
+        const mixCollection = document.getElementsByClassName('mix-color')
+        for (const mix of mixCollection) {
+            console.log(mix.innerText);
+        }
+
+
+        // querySelector
+        const place = document.querySelector('.places')
+        console.log(place.innerText);    //  New York<
+
+        // querySelectorAll
+        const someLi = document.querySelectorAll('.places')
+        for (const li of someLi) {
+            console.log(li.innerText);       // New York<  Dhaka  Chittagong   London
+        }
+
+    </script>
+<script src="js/styleJs.js"></script>
+<script src="js/append.js"></script>
+</body>
+
+</html>

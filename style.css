@@ -1,0 +1,13 @@
+/* place-title{
+    color:  blueviolet;
+} */
+
+.text-center{
+    text-align: center;
+}
+
+.section-style{
+    border: 2px solid red;
+    margin: 20px;
+    padding: 30px;
+}
