@@ -14,29 +14,46 @@
         a doloremque impedit error aut id nulla delectus saepe maiores vitae consequuntur ipsum temporibus.</p>
 
 
-        <div id="section-container">
+    <div id="section-container">
+        <section>
+            <h3 id="fruit-title">Fruits : </h3>
+            <ul>
+                <li class="mix-color">🍌 Banana</li>
+                <li class="mix-color">🥭 Mango</li>
+                <li class="mix-color">🍎 Apple </li>
+                <li class="single-color">Orange</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h3 id="place-title">Places : </h3>
+            <ul id="placeUL">
+                <li class="places">New York</li>
+                <li class="places"> Dhaka</li>
+                <li class="places"> Chittagong </li>
+                <li id="london-text">London</li>
+            </ul>
+        </section>
+
+
+
+
+    </div>
+
     <section>
-        <h3 id="fruit-title">Fruits : </h3>
-        <ul>
-            <li class="mix-color">🍌 Banana</li>
-            <li class="mix-color">🥭 Mango</li>
-            <li class="mix-color">🍎 Apple </li>
-            <li class="single-color">Orange</li>
-        </ul>
+        <button onclick="makeRed()">Make Red</button>
+        <button id="make-green">Make Green</button>
+        <button id="make-yellow">Make Yellow</button>
+        <button id="make-blue">Make Blue</button>
     </section>
 
 
     <section>
-        <h3 id="place-title" >Places : </h3>
-        <ul id="placeUL">
-            <li class="places">New York</li>
-            <li class="places"> Dhaka</li>
-            <li class="places"> Chittagong </li>
-            <li id="london-text">London</li>
-        </ul>
+        <p id="default-text">Default Text</p>
+        <input type="text" name="" id="input-text">
+        <button id="update-btn">Update</button>
     </section>
-
-</div>
     <script>
 
         // title changed by js  -  getElementById
@@ -62,8 +79,10 @@
         }
 
     </script>
-<script src="js/styleJs.js"></script>
-<script src="js/append.js"></script>
+    <script src="js/styleJs.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/updateInput.js"></script>
 </body>
 
 </html>
